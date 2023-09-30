@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .td {
+        @apply border  border-black text-sm px-1 p-1;
+    }
+    .btn {
+        @apply hover:bg-green-500 cursor-pointer duration-300 flex h-10 rounded-md justify-center items-center tracking-wide  uppercase font-bold text-sm px-2;
+    }
+    .modalinput {
+        @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
+        bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
+        bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white;
+    }
+    .selectInput {
+        @apply w-40 text-center bg-green-300 rounded-md text-sm h-10;
+    }
+    .tdr {
+        @apply border  border-black text-xs px-1 p-1;
+    }
+}
+
+a.relative {
+    background-color: rgba(8, 59, 72, 0.514) !important;
+    color: gray;
+    border-top-left-radius: 0.91rem;
+    border-bottom-right-radius: 0.91rem;
+}
+a.border-gray-300 {
+    border: 1px solid rgb(48, 196, 204) !important;
+}
+span.text-gray-500,
+span.text-gray-700 {
+    border-top-left-radius: 0.91rem;
+    border-bottom-right-radius: 0.91rem;
+    border: 1px solid rgb(48, 196, 204) !important;
+    background-color: rgba(78, 195, 228, 0.514) !important;
+    color: rgba(90, 253, 250, 0.896);
+}
+.animate-spin-slow {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        translate: -200px -100px;
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-1000deg);
+        translate: -60px 10px;
+    }
+    20% {
+        transform: rotate(-1200deg);
+        translate: -20px -10px;
+    }
+    30% {
+        transform: rotate(-1500deg);
+        translate: 0px;
+    }
+    70% {
+        transform: rotate(-2000deg);
+        translate: 0px;
+    }
+    80% {
+        transform: rotate(-4000deg);
+        translate: 0px;
+    }
+    100% {
+        transform: rotate(-7000deg);
+        translate: 0px -100px;
+    }
+}
+
+/* Reset default list styles */
+.hidden a {
+    position: relative;
+}
+/* Create the hover effect */
+.hidden a.border-transparent::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px; /* Adjust the border thickness as needed */
+    background-color: rgb(
+        79 70 229 / 1
+    ); /* Change the border color to your preference */
+    transition: all 0.3s;
+    /* transform: translateX(-50%); */
+}
+
+/* Adjust the hover effect on hover */
+.hidden a.border-transparent:hover::before {
+    width: 100%;
+    left: 0;
+    bottom: -2px;
+    /* transform: translateX(0); */
+}
+
+/* Adjust the link color on hover */
+.hidden a.border-transparent:hover {
+    color: #1bbaea; /* Change the text color on hover to your preference */
+    /* padding-bottom: 5px; */
+    /* Increase padding to make room for the border */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    position: relative;
+}
+/* Create the hover effect */
+/* Define the button style */
+.animated-button {
+    position: relative;
+    display: flex;
+    /* padding: 10px 20px; */
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5px;
+    font-size: small;
+    letter-spacing: 0.11em;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #3ce7b4, #3498db);
+    color: rgb(31, 52, 45);
+    border: none;
+    backdrop-filter: blur(0px) !important;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+button {
+    all: unset;
+}
+/* Create a pseudo-element for the hover effect */
+.animated-button::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #3498db, #3ce7b4);
+    transition: left 0.9s ease;
+    z-index: -1;
+}
+
+/* Apply the hover effect */
+.animated-button:hover::before {
+    left: 0;
+}
+.animated-button:hover {
+    backdrop-filter: blur(0px) !important;
+    color: aliceblue;
+}
