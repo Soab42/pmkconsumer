@@ -70,6 +70,7 @@ Route::group(['prefix' => 'consumer', 'middleware' => 'auth'], function () {
 
     //report
     Route::get('/report', [ReportController::class, 'index'])->name('report.index');
+    Route::get('/report2', [ReportController::class, 'index2'])->name('report2.index');
 
     // Route::get('/users', 'AdminController@users');
     // Route::get('/settings', 'AdminController@settings');
