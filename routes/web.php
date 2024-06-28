@@ -3,6 +3,7 @@
 use App\Http\Controllers\ConsumerSoldOutController;
 use App\Http\Controllers\ConsumerTransFromBranchController;
 use App\Http\Controllers\ConsumerTransThisBranchController;
+use App\Http\Controllers\CSVUploadController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OrderController;
@@ -44,12 +45,30 @@ Route::group(['prefix' => 'consumer', 'middleware' => 'auth'], function () {
 
     // Route::get('/order', 'OrderController@index')->name('order.index');
     Route::get('/order', [OrderController::class, 'index'])->name('order.index');
-    Route::post('/order', [OrderController::class, 'index'])->name('order.index');
-    Route::post('/order/branch', [OrderController::class, 'getBranchName'])->name('order.branch');
+    Route::post('/order', [CSVUploadController::class, 'uploadOrder'])->name('orderform.uploadOrder');
+    Route::post('/order', [CSVUploadController::class, 'uploadBill'])->name('orderform.uploadBill');
+
+    // products
     Route::get('/product', [ProductController::class, 'index'])->name('product.index');
+    Route::post('/product', [CSVUploadController::class, 'uploadProduct'])->name('product.upload');
+
+
+    //soldout
     Route::get('/soldout', [ConsumerSoldOutController::class, 'index'])->name('soldout.index');
+    Route::post('/soldout', [CSVUploadController::class, 'uploadSoldout'])->name('soldout.upload');
+
+
+    //transfrom
     Route::get('/transfrom', [ConsumerTransFromBranchController::class, 'index'])->name('transfrom.index');
+    Route::post('/transfrom', [CSVUploadController::class, 'uploadTransFrom'])->name('transfrom.upload');
+
+
+    //trans this
     Route::get('/transthis', [ConsumerTransThisBranchController::class, 'index'])->name('transthis.index');
+    Route::post('/transthis', [CSVUploadController::class, 'uploadTransThis'])->name('transthis.upload');
+
+
+    //report
     Route::get('/report', [ReportController::class, 'index'])->name('report.index');
 
     // Route::get('/users', 'AdminController@users');

@@ -87,6 +87,7 @@ class ReportController extends Controller
             $data = DB::select($sql, [$from, $to, $from, $to, $to, $to, $distributorName, $branchName, $distributorName]);
             return $data;
         };
+
         $branchName = $request->input('branch');
         $branchNameS = null;
         if (customValidation($branchName, 'branch')) {
@@ -100,14 +101,7 @@ class ReportController extends Controller
 
         $from =  $request->input('from') ?? '2019-01-01';
         $to =  $request->input('to') ?? date('Y-m-d');
-        $distributorName = $request->input('distributor') ?? 'Singer';;
-
-
-
-
-
-
-
+        $distributorName = $request->input('distributor') ?? 'Singer';
 
         $ZoneData = [];
 

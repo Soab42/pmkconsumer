@@ -4,7 +4,7 @@
 <x-app-layout>
   
     <x-slot name="header">
-        <div class="flex justify-between gap-40 items-center bg-gradient-to-r from-emerald-500 from-20% via-sky-500 via-30% to-blue-400 to-90% px-4 rounded-md">
+        <div class="flex justify-between gap-40 items-center bg-gradient-to-r from-emerald-500 from-20% via-sky-500 via-30% to-blue-400 to-90% px-4 rounded-md" >
             <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
                 {{ __('Consumer Sold Out') }}
 
@@ -52,11 +52,28 @@
             </form>
            
             
-        
-        <div>       
-       
+            <x-secondary-button
+            x-data=""
+            x-on:click.prevent="$dispatch('open-modal', 'confirm-update-soldout')"
+            >
+                {{ __('Update Soldout') }}
+            </x-secondary-button>
         </div>
     </x-slot>
+    <div class="modal h-0 overflow-hidden ">
+        <x-modal name="confirm-update-soldout"  focusable>
+      @include('upload.soldout');
+       </x-modal>
+    </div>
+
+
+
+
+
+
+
+
+
     <div class="py-6">
         <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">

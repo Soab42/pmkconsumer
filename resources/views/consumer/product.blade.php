@@ -59,12 +59,21 @@
             </form>
            
            
-        
+            <x-secondary-button
+            x-data=""
+            x-on:click.prevent="$dispatch('open-modal', 'confirm-update-product')"
+            >
+                {{ __('Update Product') }}
+            </x-secondary-button>
         <div>       
        
         </div>
     </x-slot>
-    
+    <div class="modal h-0 overflow-hidden ">
+        <x-modal name="confirm-update-product"  focusable>
+      @include('upload.product');
+       </x-modal>
+    </div>
 {{-- {{ $data->first()}} --}}
 
 

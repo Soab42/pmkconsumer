@@ -59,8 +59,16 @@
            
             <x-secondary-button
             x-data=""
-            x-on:click.prevent="$dispatch('open-modal', 'confirm-make-order')"
-        >{{ __('Make Order') }}</x-secondary-button>
+            x-on:click.prevent="$dispatch('open-modal', 'confirm-update-bill')"
+            >
+                {{ __('Update Order') }}
+            </x-secondary-button>
+            <x-secondary-button
+            x-data=""
+            x-on:click.prevent="$dispatch('open-modal', 'confirm-update-bill')"
+            >
+                {{ __('Update Bill') }}
+            </x-secondary-button>
         
         <div>       
        
@@ -68,9 +76,12 @@
     </x-slot>
     <div class="modal h-0 overflow-hidden ">
         
-        <x-modal name="confirm-make-order"  focusable>
-      @include('consumer.addOrder');
+        <x-modal name="confirm-update-order"  focusable>
+      @include('upload.order');
        </x-modal>
+       <x-modal name="confirm-update-bill"  focusable>
+        @include('upload.bill');
+         </x-modal>
     </div>
 
 {{-- {{$totalAmounts}} --}}
@@ -137,7 +148,6 @@
                                             @endforeach
                                             <td class="td">-</td>
                                             <td class="td">-</td>
-                                            <td class="td" >-</td>
                                             <td class="td" >{{$totals['Paid Amount']}}</td>
                                         </tr>
 
@@ -148,7 +158,6 @@
                                         <td class="td">{{$totalAmounts['ShipedQuantityTotal']}}</td>
                                         <td class="td">{{$totalAmounts['ReceivedQuantityTotal']}}</td>
                                         <td class="td">{{$totalAmounts['PurchasePriceTotal']}}</td>
-                                        <td class="td">-</td>
                                         <td class="td">-</td>
                                         <td class="td">-</td>
                                         <td class="td">{{$totalAmounts['PaidAmountTotal']}}</td>

@@ -8,8 +8,8 @@
                     {{$distributorName}} Report {{$branchNameS}}
                 </h1>
                 <form action="" method="get" class='flex gap-2 p-1'>
-                    <select name="branch" class='selectInput'>
-                        <option value="select branch" class='px-1 w-40 text-center cursor-pointer rounded-md '>
+                    <select name="branch" class='selectInput' >
+                        <option value="" class='px-1 w-40 text-center cursor-pointer rounded-md '>
                             Select Branch
                         </option>
                     @foreach ($branchNames as $branch)
@@ -22,7 +22,7 @@
         
                     </select>
                     <select name="distributor" class='selectInput'>
-                        <option value="select distributor" class='px-1 w-40 text-center  cursor-pointer rounded-md'>
+                        <option value="" class='px-1 w-40 text-center  cursor-pointer rounded-md'>
                             Select distributor</option>
                             @foreach ($distributorNames as $distributor)
                             
@@ -33,8 +33,8 @@
                             @endforeach
         
                     </select>
-                    <input type="date" name="from" id="from" class='selectInput' value="">
-                    <input type="date" name="to" id="to" class='selectInput' value="">
+                    <input type="date" name="from" id="from" class='selectInput' value="{{ request('from') }}">
+                    <input type="date" name="to" id="to" class='selectInput' value="{{ request('to') }}">
                     <button class='animated-button w-20'>Show</button>
                 </form>
             <div>       
