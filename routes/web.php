@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ConsumerSoldOutController;
+use App\Http\Controllers\HealthAcController;
 use App\Http\Controllers\ConsumerTransFromBranchController;
 use App\Http\Controllers\ConsumerTransThisBranchController;
 use App\Http\Controllers\CSVUploadController;
@@ -72,6 +73,9 @@ Route::group(['prefix' => 'consumer', 'middleware' => 'auth'], function () {
     Route::get('/report', [ReportController::class, 'index'])->name('report.index');
     Route::get('/report2', [ReportController::class, 'index2'])->name('report2.index');
 
+    // ledger
+    Route::get('/ledger', [HealthAcController::class, 'index'])->name('ledger.index');
+    Route::post('/ledger', [CSVUploadController::class, 'uploadLedger'])->name('ledger.upload');
     // Route::get('/users', 'AdminController@users');
     // Route::get('/settings', 'AdminController@settings');
 });

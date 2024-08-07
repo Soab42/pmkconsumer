@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
-
+use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\LedgerImport;
 class CSVUploadController extends Controller
 {
     public function index()
@@ -298,4 +299,20 @@ class CSVUploadController extends Controller
 
         return redirect()->route('transthis.index')->with('success', 'CSV file uploaded successfully.');
     }
+    
+    public function uploadLedger(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'csv_file' => 'required|file|mimes:csv,txt',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator);
+        }
+
+        Excel::import(new LedgerImport, $request->file('csv_file'));
+
+        return redirect()->route('ledger.upload')->with('success', 'CSV file uploaded successfully.');
+    }
+   
 }

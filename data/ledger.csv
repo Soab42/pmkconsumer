@@ -1,0 +1,66 @@
+id,Transaction Date,Voucher Code,Debit Account,Credit Account,Debit,Credit,Branch Name
+1,2022-06-30,Cr.0002220220630,Cash in Hand,Diabetes test Steeps,0,23110,Badda
+2,2022-06-30,Cr.0002220220630,Cash in Hand,Health Card Sale A/C,0,419200,Badda
+3,2022-06-30,Cr.0002220220630,Cash in Hand,Service Charge of Singer,0,5400,Badda
+4,2022-06-30,Cr.0002220220630,Cash in Hand,Telemedicine Fee,0,100,Badda
+5,2022-06-30,Cr.0002220220630,Cash in Hand,Advise Fee A/C,0,1050,Badda
+6,2022-06-30,Dr.0002220220630,Furniture & Fixture A/C,Cash in Hand,8500,0,Badda
+7,2022-06-30,Dr.0002220220630,Advance A/C,Cash in Hand,3281,0,Badda
+8,2022-06-30,Dr.0002220220630,Bank Charge & Commission A/C,Cash in Hand,2686,0,Badda
+9,2022-06-30,Dr.0002220220630,Office Maintenance A/C,Cash in Hand,2540,0,Badda
+10,2022-06-30,Con.0002220220630,Cash at Bank,Cash in Hand,0,276433,Badda
+11,2022-06-30,Con.0002220220630,Cash at Bank,Cash in Hand,276433,0,Badda
+12,2022-06-30,Cr.0002220220630,Cash in Hand,Misc. Expenses A/C,0,300,Badda
+13,2022-06-30,Dr.0002220220630,Service Charge paid Head Office,Cash in Hand,293000,0,Badda
+14,2022-06-30,Dr.0002220220630,Misc. Expenses A/C,Cash in Hand,300,0,Badda
+15,2022-06-30,Cr.0002220220630,Cash in Hand,Stock of Goods-Singer,0,93251,Badda
+16,2022-06-30,Cr.0002220220630,Cash in Hand,Advance A/C,0,24774,Badda
+17,2022-06-30,Cr.0002220220630,Cash in Hand,Service Charge of Singer,0,17549,Badda
+18,2022-06-30,Dr.0002220220630,Stock of Goods-Singer,Cash in Hand,24774,0,Badda
+19,2022-06-30,Dr.0002220220630,Stock of Goods-Singer,Cash in Hand,93251,0,Badda
+20,2022-06-30,Cr.0002220220630,Cash in Hand,Advance A/C,0,3281,Badda
+21,2022-06-30,Cr.0002220220630,Cash in Hand,Stock of Goods-Singer,0,17770,Badda
+22,2022-06-30,Cr.0002220220630,Cash in Hand,Grant A/C,0,100000,Badda
+23,2022-06-30,Cr.0002220220630,Cash in Hand,Stock of Goods-Singer,0,980,Badda
+24,2022-07-05,Cr.0002220220705,Cash in Hand,Health Card Sale A/C,0,400,Badda
+25,2022-07-05,Con.0002220220705,Cash at Bank,Cash in Hand,0,2000,Badda
+26,2022-07-05,Con.0002220220705,Cash at Bank,Cash in Hand,2000,0,Badda
+27,2022-07-06,Con.0002220220706,Cash at Bank,Cash in Hand,0,400,Badda
+28,2022-07-06,Con.0002220220706,Cash at Bank,Cash in Hand,400,0,Badda
+29,2022-07-07,Cr.0002220220707,Cash in Hand,Health Card Sale A/C,0,200,Badda
+30,2022-07-19,Cr.0002220220719,Cash in Hand,Health Card Sale A/C,0,600,Badda
+31,2022-07-20,Cr.0002220220720,Cash in Hand,Health Card Sale A/C,0,200,Badda
+32,2022-07-20,Cr.0002220220720,Cash in Hand,Diabetes test Steeps,0,100,Badda
+33,2022-07-21,Cr.0002220220721,Cash in Hand,Health Card Sale A/C,0,200,Badda
+34,2022-07-21,Cr.0002220220721,Cash in Hand,Health Card Sale A/C,0,200,Badda
+35,2022-07-25,Cr.0002220220725,Cash in Hand,Health Card Sale A/C,0,400,Badda
+36,2022-07-25,Cr.0002220220725,Cash in Hand,Health Card Sale A/C,0,400,Badda
+37,2022-07-27,Cr.0002220220727,Cash in Hand,Health Card Sale A/C,0,400,Badda
+38,2022-07-27,Cr.0002220220727,Cash in Hand,Health Card Sale A/C,0,400,Badda
+39,2022-07-27,Cr.0002220220727,Cash in Hand,Health Card Sale A/C,0,400,Badda
+40,2022-07-27,Cr.0002220220727,Cash in Hand,Health Card Sale A/C,0,400,Badda
+41,2022-07-28,Cr.0002220220728,Cash in Hand,Health Card Sale A/C,0,2600,Badda
+42,2022-07-31,Cr.0002220220731,Cash in Hand,Health Card Sale A/C,0,800,Badda
+43,2022-07-31,Con.0002220220731,Cash at Bank,Cash in Hand,0,6500,Badda
+44,2022-07-31,Con.0002220220731,Cash at Bank,Cash in Hand,6500,0,Badda
+45,2022-08-03,Cr.0002220220803,Cash in Hand,Health Card Sale A/C,0,200,Badda
+46,2022-08-04,Con.0002220220804,Cash at Bank,Cash in Hand,0,1000,Badda
+47,2022-08-04,Con.0002220220804,Cash at Bank,Cash in Hand,1000,0,Badda
+48,2022-08-04,Con.0002220220804,Cash at Bank,Cash in Hand,0,1000,Badda
+49,2022-08-04,Con.0002220220804,Cash at Bank,Cash in Hand,1000,0,Badda
+50,2022-08-07,Cr.0002220220807,Cash in Hand,Health Card Sale A/C,0,200,Badda
+51,2022-08-07,Cr.0002220220807,Cash in Hand,Health Card Sale A/C,0,200,Badda
+52,2022-08-08,Cr.0002220220808,Cash in Hand,Health Card Sale A/C,0,200,Badda
+53,2022-08-09,Cr.0002220220809,Cash in Hand,Diabetes test Steeps,0,45,Badda
+54,2022-08-09,Cr.0002220220809,Cash in Hand,Profit-Diabetes Test,0,105,Badda
+55,2022-08-11,Cr.0002220220811,Cash in Hand,Health Card Sale A/C,0,1800,Badda
+56,2022-08-11,Con.0002220220811,Cash at Bank,Cash in Hand,0,32090,Badda
+57,2022-08-11,Con.0002220220811,Cash at Bank,Cash in Hand,32090,0,Badda
+58,2022-08-11,Cr.0002220220811,Cash in Hand,Stock of Goods-Singer,0,27817,Badda
+59,2022-08-11,Cr.0002220220811,Cash in Hand,Service Charge of Singer,0,4173,Badda
+60,2022-08-11,Dr.0002220220811,Commision of Singer,Cash in Hand,500,0,Badda
+61,2022-08-14,Cr.0002220220814,Cash in Hand,Health Card Sale A/C,0,200,Badda
+62,2022-08-15,Cr.0002220220815,Cash in Hand,Health Card Sale A/C,0,400,Badda
+63,2022-08-17,Cr.0002220220817,Cash in Hand,Health Card Sale A/C,0,1400,Badda
+64,2022-08-17,Con.0002220220817,Cash at Bank,Cash in Hand,0,2600,Badda
+65,2022-08-17,Con.0002220220817,Cash at Bank,Cash in Hand,2600,0,Badda

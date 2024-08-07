@@ -59,7 +59,7 @@
            
             <x-secondary-button
             x-data=""
-            x-on:click.prevent="$dispatch('open-modal', 'confirm-update-bill')"
+            x-on:click.prevent="$dispatch('open-modal', 'confirm-update-order')"
             >
                 {{ __('Update Order') }}
             </x-secondary-button>
